@@ -2,7 +2,7 @@ import requests
 import sys
 import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-
+# if you are using another proxy you can change it and use it.
 proxies = {'http': 'http://172.16.0.6:80', 'https': 'http://172.16.0.6:80'}
 
 def exploit_sqli(url, payload):
