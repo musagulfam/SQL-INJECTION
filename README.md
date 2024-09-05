@@ -1,2 +1,2 @@
 # SQL-INJECTION
-Working on injection attakes to get my hand dirty in the field of cybersecurity.
+Learning about sql injecttion and find how we can access database without admin prevlages.
